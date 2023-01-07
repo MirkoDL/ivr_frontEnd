@@ -1,2 +1,6 @@
-# ivr_frontEnd
-Frontend GUI for IVR audio creation made html-css-bootstrap.
+# IVR frontend - PWA -
+
+Frontend GUI for IVR audio creation made with:
+* html
+* css 
+* bootstrap

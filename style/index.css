@@ -1,0 +1,5 @@
+.home-div{
+    background: rgb(55,84,185);
+    background: linear-gradient(180deg, rgba(55,84,185,1) 0%, rgba(27,38,78,0.63) 100%); 
+    min-height: 1000px;
+}

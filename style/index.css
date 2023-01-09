@@ -34,7 +34,7 @@ body{
 .btn-left{
     position: fixed;
     bottom : 10px; 
-    left: 10px
+    left: 10px;
 }
 #newSong{
     display: none;

@@ -1,5 +1,41 @@
+@font-face { font-family: Gugi; src: url('/ivr_frontEnd/resource/Gugi-Regular.ttf'); } 
+
 .home-div{
     background: rgb(55,84,185);
     background: linear-gradient(180deg, rgba(55,84,185,1) 0%, rgba(27,38,78,0.63) 100%); 
     min-height: 1000px;
+}
+body{
+    font-family: Gugi;
+}
+
+.divisor {
+    background-color: white;
+    width:50%;
+    margin: auto;
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-success{
+    background-color: #55D619;
+    color: white;
+}
+.off {
+    background-color: #409A16;
+    color: #E5E4E4;
+}
+.btn-rigth{
+    position: fixed;
+    right: 10px;
+    bottom : 10px; 
+}
+.btn-left{
+    position: fixed;
+    bottom : 10px; 
+    left: 10px
+}
+#newSong{
+    display: none;
 }

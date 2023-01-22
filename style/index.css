@@ -1,7 +1,6 @@
 @font-face { font-family: Gugi; src: url('/ivr_frontEnd/resource/Gugi-Regular.ttf'); } 
 
 .home-div{
-    background: rgb(55,84,185);
     background: linear-gradient(180deg, rgba(55,84,185,1) 0%, rgba(27,38,78,0.63) 100%); 
     min-height: 1000px;
 }
@@ -11,7 +10,7 @@ body{
 
 .divisor {
     background-color: white;
-    width:50%;
+    width: 90%;
     margin: auto;
     height: 2px;
     margin-top: 15px;
@@ -26,7 +25,7 @@ body{
     background-color: #409A16;
     color: #E5E4E4;
 }
-.btn-rigth{
+.btn-right{
     position: fixed;
     right: 10px;
     bottom : 10px; 
@@ -36,6 +35,69 @@ body{
     bottom : 10px; 
     left: 10px;
 }
+
 #newSong{
     display: none;
+}
+
+.musicSelector{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgb(55,84,185,.5);
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    
+}
+
+.search{
+    width: 85%;
+    margin: 10px auto;
+}
+.search input::placeholder{
+    color: #55D619;
+}
+
+  .musicCards{
+    margin-top: 15px;
+  }
+ .musicCard{
+    color: white;
+  }
+.musicCard img{
+    width: 50px;
+    height: 50px;
+}
+.btn-card{
+    padding: 6px;
+    background-color: #55D619;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+.btn-card:hover{
+    background-color: #409A16;
+}
+.cardName{
+    color: white;
+}
+.message{
+    color: #55D619;
+    display: flex;
+}
+#addField{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+}
+#addField input::placeholder{
+    color: #55D619;
 }

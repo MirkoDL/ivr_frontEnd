@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,38 +10,129 @@
     <title>Crea messaggi</title>
     <link rel="icon" href="/ivr_frontEnd/img/favicon.ico">
 </head>
+
 <body>
-    <div class="container-fluid home-div">
+    <div class="container-fluid home-div" id="container-fluid">
         <br>
-        <h1 class="text-center" style="color: white">|       Crea i messaggi del centralino      |</h1>
-        <div class="divisor"></div>
-        <div class="selector">
-            <div class="row justify-content-md-center">
-                <div class="col col-md-2 text-center">
-                    <button class="btn btn-success off" id="benvenuto-btn">Benvenuto</button>
+        <h1 class="text-center" id="title"style="color: white">| Crea i messaggi del centralino |</h1>
+        <div class="divisor" id="divisor"></div>
+        <div class="selector" id="selector">
+            <div class="row justify-content-md-center m-4">
+                <div class="col col-md-3 text-center">
+                    <button class="btn btn-success" id="benvenuto-btn">Benvenuto</button>
                 </div>
-                <div class="col col-md-2 text-center"">
-                    <button class="btn btn-success off" id="notte-btn">Notte</button>
+                <div class="col col-md-3 text-center"">
+                    <button class=" btn btn-success" id="notte-btn">Notte</button>
                 </div>
-                <div class="col col-md-2 text-center"">
-                    <button class="btn btn-success off" id="occupato-btn">Occupato</button>
+                <div class="col col-md-3 text-center"">
+                    <button class=" btn btn-success" id="occupato-btn">Occupato</button>
                 </div>
-                <div class="col col-md-2 text-center">
-                    <button class="btn btn-success off" id="attesa-btn">Attesa</button>
+                <div class="col col-md-3 text-center">
+                    <button class="btn btn-success" id="attesa-btn">Attesa</button>
+                </div>
+            </div>
+            <div class="row justify-content-sm-center"">
+                <div class="col-md-auto">
+                    <button id="addMsg" class="btn btn-light" style="background-color: #55D619; border: none;" id="attesa-btn"><img src="img/plus_icon.png" alt="+" style="width: 28px; height: 28px;"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center" id="addField">
+            <div class="col-md-auto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Dai un nome al nuovo messaggio...">
+                        <button class="btn btn-success" type="button" id="addFieldButton">Aggiungi</button>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <div class="row m-4 message" style=" display: flex; border:2px solid green" id="form_benvenuto">
+            <h4>Benvenuto</h4>
+            <div class="col-md-9" style="border:2px solid red">
+                <p>.</p>
+            </div>
+            <div class="col-md-2 text-center" style="border:2px solid yellow">
+                <p>.</p>
+                <p>.</p>
+            </div>
+            <div class="col-md-1 text-center" style="border:2px solid black; margin: auto">
+                <p>.</p>
+            </div>
+        </div>
+        <div class="row m-4 message" style="display: flex; border:2px solid green" id="form_notte">
+            <h4>Notte</h4>
+            <div class="col-md-9" style="border:2px solid red">
+                <p>.</p>
+            </div>
+            <div class="col-md-2 text-center" style="border:2px solid yellow">
+                <p>.</p>
+                <p>.</p>
+            </div>
+            <div class="col-md-1 text-center" style="border:2px solid black; margin: auto">
+                <p>.</p>
+            </div>
+        </div>
+        <div class="row m-4 message" style="display: flex; border:2px solid green" id="form_occupato">
+            <h4>Occupato</h4>
+            <div class="col-md-9" style="border:2px solid red">
+                <p>.</p>
+            </div>
+            <div class="col-md-2 text-center" style="border:2px solid yellow">
+                <p>.</p>
+                <p>.</p>
+            </div>
+            <div class="col-md-1 text-center" style="border:2px solid black; margin: auto">
+                <p>.</p>
+            </div>
+        </div>
+        <div class="row m-4 message" style="display: flex; border:2px solid green" id="form_attesa">
+            <h4>Attesa</h4>
+            <div class="col-md-9" style="border:2px solid red">
+                <p>.</p>
+            </div>
+            <div class="col-md-2 text-center" style="border:2px solid yellow">
+                <p>.</p>
+                <p>.</p>
+            </div>
+            <div class="col-md-1 text-center" style="border:2px solid black; margin: auto">
+                <p>.</p>
+            </div>
+        </div>
+    </div>
+        <div class="btn-right text-center" id="btn-right">
+            <button class="btn btn-light" style="color: #55D619;" id="generate">Genera</button>
+            <br><br>
+            <button class="btn btn-light" style="color: #55D619;" id="save">Salva</button>
+        </div>
+        <div class="btn-left text-center" id="btn-left">
+            <button class="btn btn-light" style="color: #55D619;" id="music">Musica</button>
+            <br><br>
+            <button class="btn btn-light" style="color: #55D619;" id="upload">Carica</button>
+        </div>
+    <div class="row text-center" id="musicSelector">
+        <div class="col-md-auto">
+            <div class="musicSelector">
+                <br>
+                <h3 class="text-center">Seleziona la musica</h3>
+                <div class="search">
+                    <input type="text" class="form-control" id="searchMusic" placeholder="Cerca brano..."
+                        style="color: #55D619">
+                </div>
+                <div class="row text-center musicCards m-2">
+                    <div class="col-md-4 musicCard">
+                        <button class="btn-card">
+                            <img src="img/music_logo.png" class="top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text cardName">Song name</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="btn-rigth text-center">
-        <button class="btn btn-light" style="color: #55D619;">Genera</button>
-        <br><br>
-        <button class="btn btn-light" style="color: #55D619;">Salva</button>
-    </div>
-    <div class="btn-left text-center">
-        <button class="btn btn-light" style="color: #55D619;">Musica</button>
-        <br><br>
-        <button class="btn btn-light" style="color: #55D619;">Carica</button>
-    </div>
+
 </body>
 <script src="/ivr_frontEnd/script/index.js"></script>
+
 </html>
